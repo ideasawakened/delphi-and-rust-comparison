@@ -1,6 +1,6 @@
 # Delphi vs Rust - Decision-Oriented Comparison
 
-This document provides a decision-oriented comparison of Delphi and Rust, focusing on how each tool fits common real-world project scenarios rather than listing language features or benchmarks.
+This document provides a decision-oriented comparison of [Delphi](http://embarcadero.com/products/delphi) and [Rust](https://rust-lang.org/), focusing on how each tool fits common real-world project scenarios rather than listing language features or benchmarks.
 
 The goal is not to declare a universal winner, but to clarify the trade-offs between two different approaches to building software:
 
