@@ -245,3 +245,68 @@ Rust emphasizes correctness, memory safety, and compile-time enforcement of inva
 Neither approach is inherently superior. Each represents a different strategy for managing software complexity and risk.
 
 The most successful teams choose tools based on project requirements, organizational constraints, and the kinds of risks they are best equipped to manage, rather than on language popularity or ideology.
+
+
+---
+# Appendix - Common Misconceptions
+
+This appendix addresses several common misconceptions that often appear in discussions comparing Delphi with other languages or platforms. These points are included to clarify context, not to advocate for or against any specific tool.
+
+---
+
+## "Delphi is dead"
+
+This claim is inaccurate and usually reflects visibility bias rather than reality.
+
+Delphi continues to be actively developed, commercially supported, and widely used in production systems around the world. It has a very large installed base of long-lived applications across industries such as finance, manufacturing, healthcare, logistics, and government. Many of these systems are business-critical and actively maintained.
+
+Several factors contribute to the misconception:
+
+- Mature platforms generate less online noise than emerging ones.
+- Long-lived commercial codebases do not require constant rewrites or tutorials.
+- Delphi developers tend to rely on stable tooling and documentation rather than frequent public experimentation.
+- Enterprise and ISV usage is often invisible to social media and open-source metrics.
+
+A lack of online hype does not indicate lack of real-world usage. In practice, Delphi remains a viable and defensible choice for organizations prioritizing productivity, stability, and long-term maintenance.
+
+---
+
+## "Rust replaces Delphi for all modern development"
+
+Rust and Delphi target different priorities and risk models.
+
+Rust focuses on compile-time enforcement of memory safety and concurrency correctness, often at the cost of increased upfront complexity. Delphi focuses on developer productivity, rapid UI development, and long-term stability for native applications.
+
+Rust does not replace Delphi in areas such as RAD workflows, visual UI design, or commercial desktop application development. Conversely, Delphi is not intended to replace Rust in low-level systems programming or bare-metal environments.
+
+They are complementary tools, not direct replacements.
+
+---
+
+## "Delphi is only for legacy applications"
+
+While Delphi is often used to maintain legacy systems, it is also used to build new applications.
+
+Modern Delphi supports 64-bit platforms, cross-platform development, modern language features, and contemporary deployment models. Many organizations continue to choose Delphi for new development where rapid delivery, native performance, and long-term maintainability are important.
+
+Legacy usage reflects longevity, not stagnation.
+
+---
+
+## "Open-source languages are always safer or more future-proof"
+
+Open-source ecosystems provide transparency and flexibility, but they also distribute responsibility across many parties.
+
+Commercial platforms provide centralized accountability, predictable support lifecycles, and contractual obligations. Neither model is inherently superior. Each carries different risks and benefits depending on organizational requirements, regulatory environment, and support expectations.
+
+Choosing between open-source and commercial tooling is a risk management decision, not a moral one.
+
+---
+
+## "Modern languages eliminate the need for discipline"
+
+Languages like Rust reduce certain classes of bugs through compile-time enforcement. This is a powerful advantage, but it does not eliminate the need for good architecture, testing, code review, and operational discipline.
+
+All production systems require thoughtful design and ongoing maintenance regardless of language choice.
+
+---
