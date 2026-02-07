@@ -320,9 +320,6 @@ Delphi and Rust support modern automation, but they optimize for different opera
 
 Delphi integrates well into established enterprise pipelines where tooling stability and environment control are priorities. Rust integrates naturally into cloud-native workflows where automation, scalability, and reproducibility are central.
 
-Choosing between them in CI/CD contexts is primarily an operational decision rather than a technical limitation.
-
-
 
 
 
@@ -1099,7 +1096,7 @@ Risk is addressed through language design and compiler enforcement.
 **Delphi:**  
 Many issues are discovered during testing or in production through logging and diagnostics. This allows flexibility but increases reliance on effective QA and operational monitoring.
 
-Delphi excels at diagnosing failures after they occur due to strong runtime tooling.  (With adequate automated testing minimizing production failures.)
+Delphi excels at diagnosing failures after they occur due to strong runtime tooling, particularly when supported by adequate automated testing.
 
 **Rust:**  
 Many issues are discovered during compilation. This reduces certain classes of runtime failures but can slow development and refactoring.
@@ -1342,7 +1339,7 @@ These resources help explain the differing priorities behind Delphi and Rust, pa
 - Rust ownership and borrowing model  
   https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
 
-- Delphi One Page Overview  
+- Delphi overview from a popular third party component vendor
   https://www.devart.com/delphi-programming-language/
 - RAD vs No-Code  
   https://www.holgerscode.com/blog/2026/01/05/rad-is-not-no-code-why-delphi-still-dominates-windows-desktop-development-after-30-years/
