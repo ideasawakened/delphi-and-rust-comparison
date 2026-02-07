@@ -603,6 +603,83 @@ Choosing between them depends on how much change your organization expects and h
 ---
 
 
+## Section H - Integration with Existing Systems
+
+Most real-world software does not exist in isolation. New components are often required to integrate with existing codebases, operating system services, databases, and external systems. Tool choice affects not only how new code is written, but how easily it connects to what already exists.
+
+This section focuses on practical integration considerations rather than language purity or theoretical interoperability.
+
+---
+
+### Interoperability with C and C++ Code
+
+**Delphi:**  
+Delphi has long supported interoperability with C and C++ through direct linking, shared libraries, and header translation. Many existing systems expose C-style APIs that can be consumed directly from Delphi with relatively thin binding layers.
+
+This makes Delphi well suited for extending or modernizing existing native codebases, particularly on Windows, where calling conventions and ABI expectations are well understood.
+
+**Rust:**  
+Rust interoperates with C and C++ through its foreign function interface. Rust encourages explicit boundaries between safe and unsafe code, which helps isolate risk but can increase integration effort.
+
+While Rust provides strong tooling for FFI, wrapping large or complex native APIs often requires careful manual work and ongoing maintenance.
+
+---
+
+### Operating System APIs and Platform Services
+
+**Delphi:**  
+Delphi offers deep, direct access to operating system APIs, particularly on Windows. Platform APIs are often exposed through well-established units or bindings, allowing developers to interact with OS services in a relatively natural way.
+
+This makes Delphi effective for applications that rely heavily on OS integration, system services, or native UI behavior.
+
+**Rust:**  
+Rust can access OS APIs through bindings and external crates. While these bindings can be comprehensive, they are typically lower-level and more explicit.
+
+This approach provides control and safety but often requires more boilerplate and familiarity with platform-specific details.
+
+---
+
+### Integration with Legacy Systems
+
+**Delphi:**  
+Delphi is frequently used in environments with long-lived systems, proprietary protocols, and legacy data formats. Its ability to consume and produce native binaries, interact with COM, and interface with older technologies makes it well suited for incremental modernization.
+
+This is particularly relevant in enterprise, industrial, and regulated environments.
+
+**Rust:**  
+Rust can integrate with legacy systems, but the process often involves wrapping or reimplementing existing interfaces. This can be appropriate when correctness and isolation are priorities, but it may increase initial integration effort.
+
+Rust is more commonly used to replace or encapsulate legacy components rather than extend them directly.
+
+---
+
+### Database-Heavy Environments
+
+**Delphi:**  
+Delphi has a long history of use in database-centric applications. Integrated database components, mature drivers, and RAD tooling support rapid development of data-heavy systems.
+
+This makes Delphi a strong fit for applications where database interaction is central and development speed matters.
+
+**Rust:**  
+Rust supports database access through a growing ecosystem of libraries. These libraries often emphasize type safety and explicit error handling.
+
+While capable, database integration in Rust is typically more code-driven and less tightly integrated with visual tooling.
+
+---
+
+### Summary
+
+Both Delphi and Rust can integrate with existing systems, but they optimize for different integration strategies.
+
+Delphi favors pragmatic, direct integration with existing codebases, OS services, and databases, often minimizing friction in established environments. Rust favors explicit, controlled integration with strong safety boundaries, often trading ease of integration for long-term correctness and isolation.
+
+The appropriate choice depends on whether the primary goal is seamless integration with existing systems or strict enforcement of correctness at integration boundaries.
+
+
+
+
+---
+
 
 ## Closing Notes
 
