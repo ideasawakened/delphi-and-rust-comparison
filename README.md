@@ -234,6 +234,73 @@ The best choice is rarely about language features in isolation, but about which 
 
 ---
 
+## Section C - CI/CD, Automation, and Workflow Realities
+
+Modern software development relies heavily on automation, reproducible builds, and continuous integration. Delphi and Rust both support automated workflows, but they approach CI/CD from very different starting points.
+
+This section focuses on operational realities rather than theoretical capability.
+
+---
+
+### Toolchain Automation
+
+**Delphi:**  
+Delphi supports command-line builds and scripted automation through MSBuild and related tooling. In practice, automation is often integrated into existing enterprise workflows and self-hosted environments.
+
+Licensing requirements typically necessitate the use of local or self-hosted build runners. This adds setup complexity but also provides tighter control over the build environment.
+
+**Rust:**  
+Rust is designed around fully scriptable toolchains. The compiler, package manager, and build system are all first-class command-line tools.
+
+This design integrates naturally with hosted CI platforms and ephemeral runners, reducing setup overhead for cloud-based automation.
+
+---
+
+### CI Environment Constraints
+
+**Delphi:**  
+CI pipelines commonly rely on persistent runners with pre-installed toolchains. This model fits well within regulated or enterprise environments where infrastructure is centrally managed.
+
+**Rust:**  
+Rust workflows are typically compatible with commodity CI environments. Toolchains are easily installed on demand, enabling rapid scaling and reproducible builds across diverse platforms.
+
+This favors teams that rely heavily on hosted CI services and infrastructure-as-code.
+
+---
+
+### Dependency Management and Reproducibility
+
+**Delphi:**  
+Dependency management often involves a mix of commercial components, source-controlled libraries, and internal packages. Reproducibility is achieved through controlled environments and version pinning at the infrastructure level.
+
+This approach aligns with long-lived products and vendor-supported ecosystems.
+
+**Rust:**  
+Rust emphasizes dependency resolution and reproducibility through its package manager and lockfiles. Builds are generally deterministic across environments given the same inputs.
+
+This model favors open ecosystems and frequent automation.
+
+---
+
+### Operational Trade-offs
+
+- Delphi favors **controlled, stable build environments** with predictable tooling.
+- Rust favors **portable, ephemeral build environments** with minimal setup.
+- Both approaches can be effective when aligned with organizational constraints.
+
+The key difference is not whether CI/CD is possible, but how much infrastructure ownership and flexibility each workflow assumes.
+
+---
+
+### Summary
+
+Delphi and Rust support modern automation, but they optimize for different operational models.
+
+Delphi integrates well into established enterprise pipelines where tooling stability and environment control are priorities. Rust integrates naturally into cloud-native workflows where automation, scalability, and reproducibility are central.
+
+Choosing between them in CI/CD contexts is primarily an operational decision rather than a technical limitation.
+
+---
 ## Closing Notes
 
 Delphi and Rust are both capable, modern tools that reflect different priorities in software development.
