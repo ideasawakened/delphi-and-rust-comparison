@@ -482,23 +482,6 @@ This appendix addresses several common misconceptions that often appear in discu
 
 ---
 
-## "Delphi is dead"
-
-This claim is inaccurate and usually reflects visibility bias rather than reality.
-
-Delphi continues to be actively developed, commercially supported, and widely used in production systems around the world. It has a very large installed base of long-lived applications across industries such as finance, manufacturing, healthcare, logistics, and government. Many of these systems are business-critical and actively maintained.
-
-Several factors contribute to the misconception:
-
-- Mature platforms generate less online noise than emerging ones.
-- Long-lived commercial codebases do not require constant rewrites or tutorials.
-- Delphi developers tend to rely on stable tooling and documentation rather than frequent public experimentation.
-- Enterprise and ISV usage is often invisible to social media and open-source metrics.
-
-A lack of online hype does not indicate lack of real-world usage. In practice, Delphi remains a viable and defensible choice for organizations prioritizing productivity, stability, and long-term maintenance.
-
----
-
 ## "Rust replaces Delphi for all modern development"
 
 Rust and Delphi target different priorities and risk models.
@@ -538,3 +521,19 @@ Languages like Rust reduce certain classes of bugs through compile-time enforcem
 All production systems require thoughtful design and ongoing maintenance regardless of language choice.
 
 ---
+
+
+## "Delphi is dead"
+
+This claim is inaccurate and usually reflects visibility bias rather than reality.
+
+Delphi continues to be actively developed, commercially supported, and widely used in production systems around the world. It has a very large installed base of long-lived applications across industries such as finance, manufacturing, healthcare, logistics, and government. Many of these systems are business-critical and actively maintained.
+
+Several factors contribute to the misconception:
+
+- Mature platforms generate less online noise than emerging ones.
+- Long-lived commercial codebases do not require constant rewrites or tutorials.
+- Delphi developers tend to rely on stable tooling and documentation rather than frequent public experimentation.
+- Enterprise and ISV usage is often invisible to social media and open-source metrics.
+
+A lack of online hype does not indicate lack of real-world usage. In practice, Delphi remains a viable and defensible choice for organizations prioritizing productivity, stability, and long-term maintenance.
