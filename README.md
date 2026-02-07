@@ -7,7 +7,7 @@ The goal is not to declare a universal winner, but to clarify the trade-offs bet
 - A productivity-first, native RAD platform (Delphi)
 - A correctness-first, systems programming language (Rust)
 
-Some categories in this comparison reflect fundamentally different priorities rather than direct feature parity. Differences are presented to help teams understand which risks are managed primarily through tooling and workflow versus those enforced by the language and compiler.
+Some categories in this comparison reflect fundamentally different priorities rather than direct feature parity. Differences are presented to clarify which risks are managed through tooling and workflow versus those enforced by the language and compiler.
 
 ---
 
