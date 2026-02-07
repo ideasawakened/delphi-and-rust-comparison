@@ -304,6 +304,9 @@ Delphi integrates well into established enterprise pipelines where tooling stabi
 Choosing between them in CI/CD contexts is primarily an operational decision rather than a technical limitation.
 
 
+
+
+
 ---
 ## Section D - Compliance and Supply Chain Considerations
 
@@ -380,6 +383,82 @@ Delphi emphasizes centralized accountability and controlled tooling evolution. R
 
 The appropriate choice depends less on language capability and more on how your organization manages risk, accountability, and long-term maintenance.
 
+---
+
+
+## Section E - Team Skills, Hiring, and Longevity
+
+Beyond technical capability, tool choice has long-term implications for hiring, onboarding, and organizational resilience. Delphi and Rust differ significantly in how teams acquire, retain, and sustain expertise over time.
+
+This section focuses on human and organizational factors rather than language features.
+
+---
+
+### Hiring Pool and Availability
+
+**Delphi:**  
+The Delphi developer pool is smaller and more specialized. Developers often have long tenure and deep domain knowledge, particularly in business, industrial, and enterprise environments.
+
+Hiring can be slower, but retention is often higher once expertise is established.
+
+**Rust:**  
+Rust has a large and growing developer community, particularly among systems programmers and newer engineers. Hiring pipelines may be broader, especially for teams already aligned with modern open-source ecosystems.
+
+However, experience levels can vary widely, and deep Rust expertise often requires deliberate investment.
+
+---
+
+### Onboarding and Ramp-Up Time
+
+**Delphi:**  
+Delphi emphasizes productivity through tooling, visual designers, and integrated workflows. New team members with prior Pascal or RAD experience can become productive quickly.
+
+Knowledge transfer is often facilitated by stable frameworks and long-lived codebases.
+
+**Rust:**  
+Rust has a steeper learning curve, particularly around ownership, borrowing, and concurrency models. Initial ramp-up time can be longer, but teams often report increased confidence once core concepts are mastered.
+
+Onboarding success depends heavily on mentorship and documentation quality.
+
+---
+
+### Knowledge Retention and Bus Factor
+
+**Delphi:**  
+Delphi teams often accumulate institutional knowledge over many years. This can be a strength for maintaining complex systems, but also creates risk if knowledge is concentrated in a small number of individuals.
+
+Documentation and deliberate knowledge sharing are important to mitigate bus-factor risk.
+
+**Rust:**  
+Rust enforces many invariants at the language level, which can reduce reliance on undocumented conventions. This can lower certain maintenance risks, but does not eliminate the need for architectural understanding.
+
+Turnover may be higher in fast-moving teams, making process and code clarity important.
+
+---
+
+### Long-Term Team Sustainability
+
+**Delphi:**  
+Delphi is commonly used in organizations that value stability, predictable evolution, and long-term maintenance. Teams often optimize for continuity rather than rapid expansion.
+
+This model suits products with long lifespans and incremental development.
+
+**Rust:**  
+Rust adoption is often driven by technical requirements and ecosystem momentum. Teams may evolve more rapidly, adopting new libraries and patterns as the ecosystem changes.
+
+This suits environments where change and iteration are expected parts of the lifecycle.
+
+---
+
+### Summary
+
+Choosing between Delphi and Rust affects not only how software is written, but how teams grow, adapt, and retain knowledge.
+
+Delphi favors stable, experienced teams with long-term ownership of systems. Rust favors scalable hiring pipelines and language-enforced correctness, with higher initial learning investment.
+
+The right choice depends on organizational culture, hiring strategy, and how much continuity versus growth your team expects over time.
+
+In many regions, experienced Delphi developers tend to have extremely long tenure in existing positions. This can slow hiring but may also correlate with deep domain expertise and long-term system ownership. Organizations should account for these dynamics when planning staffing and succession.
 
 ---
 ## Closing Notes
