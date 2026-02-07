@@ -461,6 +461,131 @@ The right choice depends on organizational culture, hiring strategy, and how muc
 In many regions, experienced Delphi developers tend to have extremely long tenure in existing positions. This can slow hiring but may also correlate with deep domain expertise and long-term system ownership. Organizations should account for these dynamics when planning staffing and succession.
 
 ---
+
+
+
+
+## Section F - Learning Curve and Cognitive Load
+
+Tool choice influences not only how software is written, but how much mental effort is required to reason about it correctly over time. Delphi and Rust impose different kinds of cognitive load on developers, both initially and throughout a project lifecycle.
+
+This section focuses on how developers learn, reason about, and sustain productivity with each tool.
+
+---
+
+### Initial Learning Curve
+
+**Delphi:**  
+Delphi emphasizes approachability and rapid productivity, particularly for developers familiar with imperative or object-oriented programming models. Visual designers, strong IDE guidance, and immediate feedback reduce the barrier to entry.
+
+Developers can often become productive quickly, especially when working on UI-driven or business-oriented applications.
+
+**Rust:**  
+Rust has a steeper initial learning curve. Core concepts such as ownership, borrowing, and lifetimes require developers to adopt a different mental model.
+
+Early development may feel slower as developers internalize these rules, but this investment can pay off in reduced runtime errors and increased confidence once the model is understood.
+
+---
+
+### Ongoing Cognitive Load
+
+**Delphi:**  
+Delphi places fewer restrictions on how code is written, which allows flexibility but also requires discipline. Developers must rely on conventions, reviews, and testing to maintain correctness, especially in concurrent or low-level code.
+
+Cognitive load is often shifted from the compiler to the developer and team processes.
+
+**Rust:**  
+Rust shifts much of the cognitive burden to the compiler. The language enforces strict rules that prevent many classes of bugs before code runs.
+
+While this reduces certain maintenance risks, it can increase mental overhead when making changes, as developers must reason carefully about ownership and lifetimes during refactoring.
+
+---
+
+### Error Discovery and Debugging
+
+**Delphi:**  
+Many issues are discovered during testing or runtime. Delphi's debugger and tooling are optimized to inspect live state, making it well suited for diagnosing complex application behavior.
+
+This supports iterative development and exploratory debugging.
+
+**Rust:**  
+Many errors are detected at compile time, reducing the likelihood of runtime failures. Debugging often focuses more on logic and behavior than on memory safety.
+
+However, compiler error messages can be dense, and understanding them requires familiarity with Rust's type and ownership systems.
+
+---
+
+### Summary
+
+Delphi favors a lower initial learning curve and prioritizes developer productivity through tooling and flexibility. Rust requires a higher upfront investment in learning but provides stronger guarantees that reduce certain classes of errors.
+
+The appropriate choice depends on whether your team prefers to manage complexity through tooling and process, or through language-enforced constraints.
+
+---
+
+
+
+
+## Section G - Long-Term Maintenance and Evolution Risk
+
+Long-lived software systems must adapt to changing requirements, platforms, and teams over time. Tool choice influences how easily systems evolve and how much risk is introduced by change.
+
+This section examines maintenance and evolution concerns beyond day-to-day development.
+
+---
+
+### Codebase Evolution and Refactoring
+
+**Delphi:**  
+Delphi codebases often evolve incrementally over many years. Strong IDE refactoring tools and stable frameworks support gradual change without frequent rewrites.
+
+However, flexibility can allow architectural drift if discipline is not maintained.
+
+**Rust:**  
+Rust's strict type and ownership systems make large-scale refactoring more explicit. Changes that violate invariants are caught early, but refactoring can require more effort to satisfy the compiler.
+
+This can slow certain changes but reduces the risk of subtle regressions.
+
+---
+
+### Language and Ecosystem Stability
+
+**Delphi:**  
+Delphi emphasizes backward compatibility and conservative evolution. Language changes and framework updates tend to prioritize stability over rapid innovation.
+
+This suits organizations that value predictability and long-term support.
+
+**Rust:**  
+Rust evolves more rapidly, with regular releases and ongoing ecosystem growth. While backward compatibility is a stated goal, libraries and patterns may change as the ecosystem matures.
+
+Teams must plan for periodic updates and ecosystem shifts.
+
+---
+
+### Maintenance Risk Profile
+
+**Delphi:**  
+Maintenance risk is often tied to knowledge concentration and tooling dependency. When managed well, Delphi systems can remain stable and maintainable for decades.
+
+Risk increases primarily through personnel changes rather than language evolution.
+
+**Rust:**  
+Maintenance risk is often front-loaded during development but reduced at runtime due to strong guarantees. Long-term risk is more closely tied to dependency management and ecosystem churn.
+
+Governance and dependency review processes are critical.
+
+---
+
+### Summary
+
+Delphi favors long-term stability, gradual evolution, and continuity of tooling. Rust favors explicit correctness guarantees and evolving best practices, with higher upfront and ongoing adaptation costs.
+
+Choosing between them depends on how much change your organization expects and how it prefers to manage long-term risk.
+
+---
+
+
+
 ## Closing Notes
 
 Delphi and Rust are both capable, modern tools that reflect different priorities in software development.
