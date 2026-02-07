@@ -675,7 +675,94 @@ Delphi favors pragmatic, direct integration with existing codebases, OS services
 
 The appropriate choice depends on whether the primary goal is seamless integration with existing systems or strict enforcement of correctness at integration boundaries.
 
+---
 
+
+## Section I - Debugging, Observability, and Production Diagnostics
+
+Debugging and diagnostics extend beyond development-time tools. In production systems, the ability to observe behavior, diagnose failures, and understand system state is critical to long-term reliability and maintainability.
+
+This section examines how Delphi and Rust support debugging, observability, and operational diagnostics across the software lifecycle.
+
+---
+
+### Development-Time Debugging
+
+**Delphi:**  
+Delphi provides a tightly integrated debugger as part of its IDE. Developers can inspect live object state, evaluate expressions, step through code, and visualize call stacks in complex applications.
+
+This model supports interactive debugging, particularly for UI-heavy or stateful applications where understanding runtime behavior is essential.
+
+**Rust:**  
+Rust relies on external debuggers and tooling, typically integrated through IDEs or editors. Debugging workflows often involve stepping through optimized binaries with symbol information.
+
+While effective, the experience is generally more code-centric and less visually guided, requiring familiarity with external debugging tools and workflows.
+
+---
+
+### Runtime Diagnostics and Logging
+
+**Delphi:**  
+Delphi applications commonly implement diagnostics through logging frameworks, structured logs, and application-level monitoring. These are often customized per organization or product.
+
+The ecosystem encourages pragmatic instrumentation, with developers relying on tooling, logging, and runtime inspection to understand behavior.
+
+**Rust:**  
+Rust places strong emphasis on explicit error handling and structured diagnostics. Logging and tracing libraries are commonly used to emit structured, machine-readable telemetry.
+
+This approach aligns well with modern observability practices, but requires upfront design and discipline to implement effectively.
+
+---
+
+### Error Handling and Failure Analysis
+
+**Delphi:**  
+Error handling is flexible and relies on language constructs, conventions, and developer discipline. Failures are often discovered through testing, logging, or production diagnostics.
+
+The debugger plays a central role in diagnosing issues after they occur.
+
+**Rust:**  
+Rust encourages explicit error propagation and handling through the type system. Many errors are addressed during compilation, reducing certain categories of runtime failures.
+
+When failures do occur, they tend to be more explicit and easier to trace to a root cause.
+
+---
+
+### Production Observability
+
+**Delphi:**  
+Production observability is typically achieved through application-specific logging, external monitoring tools, and operational dashboards. Integration is often customized to the deployment environment.
+
+This approach fits organizations with established operational practices and monitoring infrastructure.
+
+**Rust:**  
+Rust ecosystems often integrate naturally with modern observability stacks, including structured logging, metrics, and distributed tracing.
+
+These practices are commonly adopted in cloud-native and service-oriented environments.
+
+---
+
+### Post-Deployment Debugging and Support
+
+**Delphi:**  
+Delphi excels in environments where interactive debugging, reproduction of issues, and direct inspection of application state are part of the support workflow.
+
+This supports rapid diagnosis and resolution in desktop and enterprise environments.
+
+**Rust:**  
+Rust favors prevention of certain failures over post-hoc debugging. When issues arise, diagnosis often relies on logs, traces, and careful analysis rather than interactive inspection.
+
+This suits systems where reproducibility and determinism are prioritized.
+
+---
+
+### Summary
+
+Delphi and Rust both support effective debugging and diagnostics, but they emphasize different stages of the software lifecycle.
+
+Delphi prioritizes interactive debugging and runtime inspection, supporting exploratory development and rapid issue resolution. Rust emphasizes compile-time guarantees and structured observability, reducing certain classes of failures and supporting systematic diagnosis in production environments.
+
+The choice depends on whether your organization prefers to rely more heavily on interactive tooling and runtime inspection, or on prevention and structured diagnostics enforced by design.
 
 
 ---
