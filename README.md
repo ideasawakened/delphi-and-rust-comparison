@@ -1297,3 +1297,108 @@ Several factors contribute to the misconception:
 - Enterprise and ISV usage is often invisible to social media and open-source metrics.
 
 A lack of online hype does not indicate lack of real-world usage. In practice, Delphi remains a viable and defensible choice for organizations prioritizing productivity, stability, and long-term maintenance.
+
+
+---
+
+
+
+# Links and Further Reading
+
+This appendix provides references for readers who want additional context on Delphi and Rust. Direct, formal comparisons between Delphi and Rust are relatively uncommon, as the two tools target different priorities and problem domains. The links below are intended to support further exploration rather than to argue for a particular conclusion.
+
+---
+
+## Official Project Resources
+
+**Delphi**
+- Embarcadero Delphi product page  
+  https://www.embarcadero.com/products/delphi
+- Delphi documentation  
+  https://docwiki.embarcadero.com
+- Delphi language guide  
+  https://docwiki.embarcadero.com/RADStudio/Florence/en/Delphi_Language_Guide_Index
+- Embarcadero developer blogs and technical articles  
+  https://blogs.embarcadero.com
+- Delphi Product Editions  
+  https://www.embarcadero.com/products/delphi/product-editions
+
+**Rust**
+- Rust language homepage  
+  https://www.rust-lang.org
+- The Rust Programming Language (official book)  
+  https://doc.rust-lang.org/book/
+- Rust reference documentation  
+  https://doc.rust-lang.org/reference/
+
+---
+
+## Language Design and Philosophy
+
+These resources help explain the differing priorities behind Delphi and Rust, particularly around productivity, safety, and correctness.
+
+- Rust design goals and memory safety overview  
+  https://www.rust-lang.org/what/why
+- Rust ownership and borrowing model  
+  https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
+
+- Delphi One Page Overview  
+  https://www.devart.com/delphi-programming-language/
+- RAD vs No-Code  
+  https://www.holgerscode.com/blog/2026/01/05/rad-is-not-no-code-why-delphi-still-dominates-windows-desktop-development-after-30-years/
+
+---
+
+## Systems Programming and Safety Context
+
+Rust is often discussed in the context of memory safety and systems reliability. These links provide background without framing Delphi as deficient.
+
+- Memory safety in systems programming (general context)  
+  https://www.memorysafety.org
+- Rust adoption in safety- and security-critical systems  
+  https://www.rust-lang.org/static/pdfs/RustSurvey2023.pdf
+
+---
+
+## Productivity and Tooling Perspectives
+
+These resources illustrate the differing philosophies around tooling and workflow.
+
+- Windows Visual component-based development (VCL)  
+  https://docwiki.embarcadero.com/RADStudio/en/VCL
+- Cross Platform Visual component-based development (FMX)  
+  https://docwiki.embarcadero.com/RADStudio/Florence/FireMonkey
+
+- Rust tooling and cargo ecosystem  
+  https://doc.rust-lang.org/cargo/
+- Rust tooling overview  
+  https://www.rust-lang.org/tools
+
+---
+
+## Community Discussion and Experience Reports
+
+Most real-world discussion of Delphi vs Rust occurs indirectly through experience reports rather than direct comparisons.
+
+- Rust in production experience reports  
+  https://users.rust-lang.org
+- Delphi developer international community forum  
+  https://en.delphipraxis.net
+
+These discussions reflect practitioner experience and should be interpreted in context, as they often emphasize specific use cases rather than general applicability.
+
+---
+
+## Notes on Comparative Material
+
+Formal, head-to-head comparisons between Delphi and Rust are rare and often incomplete. This is largely because:
+
+- Delphi and Rust address different primary problem spaces
+- Their ecosystems evolved with different assumptions
+- Comparative benchmarks often focus on isolated technical metrics rather than workflow or organizational fit
+
+Readers are encouraged to evaluate sources critically and consider whether a given comparison reflects their own project constraints and priorities.
+
+---
+
+
